@@ -1,0 +1,15 @@
+#Test externos
+clang++ -Wall -Werror -Wextra -I./srcs/containers -I./srcs/includes -I./srcs/resources/Ztests/lmartin srcs/resources/Ztests/lmartin/*.cpp && ./a.out
+
+#Test externos
+clang++ -Wall -Werror -Wextra -I./srcs/containers -I./srcs/includes -I./srcs/resources/Ztests/other srcs/resources/Ztests/other/*.cpp && ./a.out
+
+#mis Test
+clang++ -Wall -Werror -Wextra -I./srcs/containers -I./srcs/includes -I./srcs/resources/Ztests/mytest main.cpp && ./a.out
+
+#checkers
+make vector && ./scripts/tester.sh
+
+#thgermani
+clang++ -Wall -Werror -Wextra -I./srcs/includes -I./srcs/containers -I./srcs/resources/Ztests/thgermai ./srcs/resources/Ztests/thgermai/main.cpp ./srcs/resources/Ztests/thgermai/ListTest.cpp ./srcs/resources/Ztests/thgermai/VectorTest.cpp ./srcs/resources/Ztests/thgermai/QueueTest.cpp ./srcs/resources/Ztests/thgermai/StackTest.cpp ./srcs/resources/Ztests/thgermai/MapTest.cpp && ./a.out
+
